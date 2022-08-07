@@ -1,0 +1,69 @@
+.grid-container-biografia
+{    
+	width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;       
+	grid-template-areas: 'imagen imagen'
+						 'texto texto';	
+    grid-template-rows: auto;	
+}
+
+.grid-item
+{
+    display: flex; 
+    flex-direction: column;   
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.grid-item-col1
+{
+	grid-area: imagen;
+}
+
+.grid-item-col1
+{
+    display: flex;    
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+    margin: 15px;    
+}
+
+.grid-item-col2
+{
+	grid-area: texto
+}
+
+.grid-item-col2
+{
+    display: flex;    
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+    margin: 15px;    
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* --------------------------- ESTILOS - DESKTOP --------------------------- */
+/* ------------------------------------------------------------------------- */
+
+
+/* -------------------------- BIOGRAFIA.HTML ------------------------------ */
+
+@media (min-width: 750px) {
+   
+    
+    .grid-container-biografia
+    {       
+        display: grid;
+        grid-template-columns: 1fr 1fr ;       
+        grid-template-areas: 'imagen texto';						             
+        grid-template-rows: auto;
+    }
+   
+}
+
+

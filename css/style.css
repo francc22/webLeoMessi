@@ -31,7 +31,7 @@ p {
     box-sizing: border-box;
 }
 
-/* -------------------------- INDEX.HTML ------------------------------ */
+
 
 /* ---- logo y boton menu de navegación ---- */
 
@@ -88,6 +88,10 @@ header img {
 .navegacion-menu a:hover {
     color: red;
 }
+
+
+/* -------------------------- INDEX.HTML ------------------------------ */
+
 
 
 /* ---- Imagen y titulo de Index.html ---- */
@@ -259,6 +263,8 @@ h2
  
 /* ---- Seccion: Fundacion Leo Messi en Index.html ---- */
 
+
+
 .flex-container-fundacion-messi
 {
     display: flex;
@@ -279,6 +285,14 @@ h2
     margin: 0;
     margin-top: 40px;
 }
+
+
+
+/* -------------------------- BIOGRAFIA.HTML ------------------------------ */
+
+
+
+
 
 
 
@@ -326,174 +340,13 @@ h2
 
 
 
-
-
-    
-	
-    
-	
+/*-----------------------------------------------------------------------------------*/
 
 
 
 
-/* ------------------------- MENU - BIOGRAFIA -----------------------------------------*/
 
 
-#biografia h2 {
-    padding-top: 50px;
-}
-
-#biografia #biografia-messi {
-    width: 100%;
-    height: 600px;
-}
-
-#biografia .infancia {
-    display: inline-block;
-}
-
-#biografia .infancia img {
-
-    width: 45%;
-    border-radius: 15px;
-    text-align: left;
-}
-
-#biografia .infancia p {
-    display: inline-block;
-    width: 45%;
-    text-align: justify;
-    vertical-align: top;
-    margin-left: 50px;
-}
-
-#biografia .infancia p span {
-    display: inline-block;
-    padding-top: 15px;
-}
-
-
-#biografia .barcelona {
-    display: inline-block;
-}
-
-#biografia .barcelona p {
-    display: inline-block;
-    width: 50%;
-    text-align: justify;
-    vertical-align: top;
-    padding-left: 10px;
-}
-
-#biografia .barcelona img {
-    width: 40%;
-    border-radius: 15px;
-    margin-left: 5%;
-    vertical-align: top;
-    margin-top: 5%;
-}
-
-
-#biografia .debut {
-    display: inline-block;
-}
-
-#biografia .debut img {
-
-    width: 45%;
-    border-radius: 15px;
-    text-align: left;
-}
-
-#biografia .debut p {
-    display: inline-block;
-    width: 45%;
-    text-align: justify;
-    vertical-align: top;
-    margin-left: 50px;
-}
-
-
-
-#biografia .seleccion {
-    display: inline-block;
-}
-
-#biografia .seleccion p {
-    display: inline-block;
-    width: 50%;
-    text-align: justify;
-    vertical-align: top;
-    margin-top: 3%;
-    padding-left: 10px;
-}
-
-#biografia .seleccion img {
-    width: 40%;
-    border-radius: 15px;
-    margin-left: 5%;
-    vertical-align: top;
-    margin-top: 1%;
-}
-
-
-#biografia .familia {
-    display: inline-block;
-}
-
-#biografia .familia img {
-
-    width: 45%;
-    border-radius: 15px;
-    text-align: left;
-}
-
-#biografia .familia p {
-    display: inline-block;
-    width: 45%;
-    text-align: justify;
-    vertical-align: top;
-    margin-left: 50px;
-}
-
-/* ---------------------- estadisticas.html -----------------*/
-
-#estadistica-barcelona img,
-#estadistica-psg img,
-#estadistica-argentina img,
-#estadistica-total img {
-    margin-left: 20%;
-    width: 50%;
-    border-radius: 5px;
-}
-
-.sub-menu a {
-    margin-top: 20px;
-    margin-left: 5px;
-    display: inline-block;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 18px;
-    background-color: #04041c;
-    color: white;
-    border-radius: 10px;
-}
-
-.sub-menu a:hover {
-    color: red;
-    text-decoration-line: underline;
-    text-decoration-color: red;
-}
-
-
-#estadisticas h2 {
-    padding-bottom: 15px;
-    padding-top: 15px;
-}
-
-#estadistica-portada {
-    width: 100%;
-}
 
 /* ---------------------- palmares.html -----------------*/
 
