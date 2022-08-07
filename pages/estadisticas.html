@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css personalizado-->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-estadisticas.css">
     <title>Estadísticas</title>
 </head>
 
@@ -51,36 +52,87 @@
 
     </nav>
 
+    <main class="main">
 
-    <img id="estadistica-portada" src="../img/estadistica-portada.jpg" alt="estadistica-messi" />
-    <h1>Estadísticas</h1>
-    <div class="sub-menu">
-        <a href="#estadistica-barcelona">BARCELONA</a>
-        <a href="#estadistica-psg">PSG</a>
-        <a href="#estadistica-argentina">ARGENTINA</a>
-        <a href="#estadistica-total">TOTAL</a>
-    </div>
+        <div class="grid-container-portada">
+            <div class="grid-item-portada-imagen">
+                <img src="../img/estadistica-portada.jpg" alt="estadistica-messi" />
+            </div>
+            <div class="grid-item-portada-titulo">
+                <h1>Estadísticas</h1>
+            </div>
+        </div>
 
-    <div id="estadistica-barcelona">
-        <h2>Estadísticas en Barcelona</h2>
-        <img src="../img/estadistica-barcelona.png" alt="estadistica-messi-barcelona" />
-    </div>
+        <div id="estadisticas-sub-menu" class="estadisticas-sub-menu">
+            <a href="#estadistica-barcelona">BARCELONA</a>
+            <a href="#estadistica-psg">PSG</a>
+            <a href="#estadistica-argentina">ARGENTINA</a>
+            <a href="#estadistica-total">TOTAL</a>
+        </div>
 
-    <div id="estadistica-psg">
-        <h2>Estadísticas en Paris Saint Germain</h2>
-        <img src="../img/estadistica-psg.png" alt="estadistica-messi-psg" />
-    </div>
+        <section>
 
-    <div id="estadistica-argentina">
-        <h2>Estadísticas en la selección Argentina</h2>
-        <img src="../img/estadistica-argentina.png" alt="estadistica-messi-argentina" />
-    </div>
+            <div class="grid-container-estadisticas">
 
-    <div id="estadistica-total">
-        <h2>Estadísticas Totales</h2>
-        <img src="../img/estadistica-total.png" alt="estadistica-messi-total" />
-    </div>
-    <footer class="footer">
+                <div id="estadistica-barcelona" class="grid-item grid-item-col1">
+                    <h2><a href="#estadisticas-sub-menu">Estadísticas en Barcelona</a></h2>
+                </div>
+
+                <div class="grid-item grid-item-col2">
+                    <img src="../img/estadistica-barcelona.png" alt="estadistica-messi-barcelona" />
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="grid-container-estadisticas">
+                <div id="estadistica-psg" class="grid-item grid-item-col1">
+                    <h2><a href="#estadisticas-sub-menu">Estadísticas en Paris Saint Germain</a></h2>
+                </div>
+
+                <div class="grid-item grid-item-col2">
+                    <img src="../img/estadistica-psg.png" alt="estadistica-messi-psg" />
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+
+            <div class="grid-container-estadisticas">
+
+                <div id="estadistica-argentina" class="grid-item grid-item-col1">
+                    <h2><a href="#estadisticas-sub-menu">Estadísticas en la Selección Argentina</a></h2>
+                </div>
+
+                <div class="grid-item grid-item-col2">
+                    <img src="../img/estadistica-argentina.png" alt="estadistica-messi-argentina" />
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <div id="estadistica-total" class="grid-container-estadisticas">
+
+                <div class="grid-item grid-item-col1">
+                    <h2><a href="#estadisticas-sub-menu">Estadísticas Totales</a></h2>
+                </div>
+
+                <div class="grid-item grid-item-col2">
+                    <img src="../img/estadistica-total.png" alt="estadistica-messi-total" />
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--  <footer class="footer">
         <div id="div-siguenos">
             <span>Síguenos</span>
             <a href="#"><img src="../img/icono-youtube.png" alt="red-social-youtube" /></a>
@@ -95,6 +147,7 @@
         <div id="div-contacto">
             <a href="../pages/contacto.html"><img src="../img/contacto.jpg" alt="img-contacto" /></a>
         </div>
-    </footer>
+    </footer> -->
 </body>
+
 </html>
