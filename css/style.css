@@ -1,0 +1,684 @@
+/* ------------------------------------------------------------------------- */
+/* ---------------- APLICO ESTILOS CON DISEÑO MOBILE FIRST ----------------- */
+/* ------------------------------------------------------------------------- */
+
+
+/* --------------------------- RESETEO EL NAVEGADOR -----------------------*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;    
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+a {
+    text-decoration-line: none;
+}
+
+p {
+    margin: 0
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+/* -------------------------- INDEX.HTML ------------------------------ */
+
+/* ---- logo y boton menu de navegación ---- */
+
+.navegacion {
+    background: #04041c;
+}
+
+.navegacion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+}
+
+/* ---- menu de navegación ---- */
+
+.navegacion-menu {
+    display: flex;
+    position: absolute;
+    background: #04041c;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;    
+    height: 0;
+    overflow: hidden;
+    transition: 0.6s ease;
+}
+
+.navegacion-link {
+    color: white;
+}
+
+#navegacion-header:target .navegacion-menu {
+    height: 250px;
+}
+
+#navegacion-header:target .abrir {
+    display: none;
+}
+
+#navegacion-header:target .cerrar {
+    display: flex;
+}
+
+.cerrar {
+    display: none;
+}
+
+.navegacion-menu a:hover {
+    color: red;
+}
+
+
+/* ---- Imagen y titulo de Index.html ---- */
+
+.grid-container-portada
+{
+    width: 100%;
+	margin: auto;	    
+	display: grid;	
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;	    
+}
+
+.grid-container-portada > div
+{
+    display: flex;
+	align-items: center; 
+	justify-content: center; 
+	background-color: #04041c
+} 
+
+.grid-item-portada-imagen img
+{
+	width: 100%;    
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.grid-item-portada-titulo h1
+{
+    color: white;
+	font-size: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+    text-align: center;
+}
+
+/* ---- Seccion: Noticias / Novedades - Fundacion Leo Messi en Index.html ---- */
+
+.grid-container
+{    
+	width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;       
+	grid-template-areas: 'imagen imagen imagen'
+						 'texto texto texto'
+						 'links links links';	
+    grid-template-rows: auto;	
+}
+
+.grid-item-col1
+{
+	grid-area: imagen;
+}
+
+.grid-item-col2
+{
+	grid-area: texto
+}
+
+.grid-item-col3
+{
+    grid-area: links;
+}
+
+.grid-item-col1
+{
+    display: flex;    
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+    margin: 15px;    
+}
+
+.grid-item-col2
+{
+    display: flex;    
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+    margin: 15px;    
+}
+
+.grid-item img
+{
+    border-radius: 10px;
+    width: 100%;    
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+.grid-item-col3 a img
+{  
+    display: flex;   
+    flex-direction: row;   
+    width: 50px;
+    height: 50px;
+}
+
+h2
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;    
+    margin-top: 20px;
+    margin-bottom: 50px;    
+    text-align: center;    
+    text-decoration: underline;    
+}
+
+.grid-item
+{
+    display: flex; 
+    flex-direction: column;   
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.grid-item h3
+{    
+    font-size: 18px;    
+    margin-top: 10px;  
+    text-align: center;  
+}
+
+.grid-item p
+{
+    text-align: justify;
+    padding: 10px;
+} 
+
+
+.grid-item-col3
+{
+    display: flex;
+    flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.grid-item-col3 a img
+{    
+    width: 25px;
+    height: 25px;
+}
+
+.boton-acciones-fundacion
+{    
+    background: #0a7ebd;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+
+ 
+/* ---- Seccion: Fundacion Leo Messi en Index.html ---- */
+
+.flex-container-fundacion-messi
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container-fundacion-messi img
+{
+    width: 100%;    
+    margin: auto;
+    padding: 10px;
+}
+
+.flex-container-fundacion-messi h2
+{
+    margin: 0;
+    margin-top: 40px;
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+/* --------------------------- ESTILOS - DESKTOP --------------------------- */
+/* ------------------------------------------------------------------------- */
+
+
+/* -------------------------- INDEX.HTML ------------------------------ */
+
+
+/* ---- logo y boton menu (abrir-cerrar) de navegación ---- */
+
+@media (min-width: 750px) {
+    .navegacion {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navegacion-menu-mobile {
+        display: none;
+    }   
+
+/* ---- menu de navegación ---- */
+
+    .navegacion-menu {
+        height: auto;
+        flex-direction: row;
+        position: static;
+    }
+
+    /* ---- contenido (main) de Index.html ---- */
+
+    .grid-container
+    {       
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;       
+        grid-template-areas: 'imagen texto links';						             
+        grid-template-rows: auto;
+    }
+   
+}
+
+
+
+
+
+
+
+    
+	
+    
+	
+
+
+
+
+/* ------------------------- MENU - BIOGRAFIA -----------------------------------------*/
+
+
+#biografia h2 {
+    padding-top: 50px;
+}
+
+#biografia #biografia-messi {
+    width: 100%;
+    height: 600px;
+}
+
+#biografia .infancia {
+    display: inline-block;
+}
+
+#biografia .infancia img {
+
+    width: 45%;
+    border-radius: 15px;
+    text-align: left;
+}
+
+#biografia .infancia p {
+    display: inline-block;
+    width: 45%;
+    text-align: justify;
+    vertical-align: top;
+    margin-left: 50px;
+}
+
+#biografia .infancia p span {
+    display: inline-block;
+    padding-top: 15px;
+}
+
+
+#biografia .barcelona {
+    display: inline-block;
+}
+
+#biografia .barcelona p {
+    display: inline-block;
+    width: 50%;
+    text-align: justify;
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+#biografia .barcelona img {
+    width: 40%;
+    border-radius: 15px;
+    margin-left: 5%;
+    vertical-align: top;
+    margin-top: 5%;
+}
+
+
+#biografia .debut {
+    display: inline-block;
+}
+
+#biografia .debut img {
+
+    width: 45%;
+    border-radius: 15px;
+    text-align: left;
+}
+
+#biografia .debut p {
+    display: inline-block;
+    width: 45%;
+    text-align: justify;
+    vertical-align: top;
+    margin-left: 50px;
+}
+
+
+
+#biografia .seleccion {
+    display: inline-block;
+}
+
+#biografia .seleccion p {
+    display: inline-block;
+    width: 50%;
+    text-align: justify;
+    vertical-align: top;
+    margin-top: 3%;
+    padding-left: 10px;
+}
+
+#biografia .seleccion img {
+    width: 40%;
+    border-radius: 15px;
+    margin-left: 5%;
+    vertical-align: top;
+    margin-top: 1%;
+}
+
+
+#biografia .familia {
+    display: inline-block;
+}
+
+#biografia .familia img {
+
+    width: 45%;
+    border-radius: 15px;
+    text-align: left;
+}
+
+#biografia .familia p {
+    display: inline-block;
+    width: 45%;
+    text-align: justify;
+    vertical-align: top;
+    margin-left: 50px;
+}
+
+/* ---------------------- estadisticas.html -----------------*/
+
+#estadistica-barcelona img,
+#estadistica-psg img,
+#estadistica-argentina img,
+#estadistica-total img {
+    margin-left: 20%;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.sub-menu a {
+    margin-top: 20px;
+    margin-left: 5px;
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #04041c;
+    color: white;
+    border-radius: 10px;
+}
+
+.sub-menu a:hover {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+}
+
+
+#estadisticas h2 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#estadistica-portada {
+    width: 100%;
+}
+
+/* ---------------------- palmares.html -----------------*/
+
+#palmares .palmares {
+    width: 100%;
+    display: block;
+}
+
+/* --------------------- fotos.html ----------------------*/
+
+.seccion-menu a,
+.seccion-menu span {
+    color: white;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.seccion-menu span {
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    display: inline-block;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.seccion-menu a:hover {
+    color: red;
+    font-size: 20px;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+}
+
+.seccion-menu .menu {
+    list-style-type: none;
+    background-color: #04041c;
+    border-radius: 15px;
+    color: white;
+    padding-left: 20px;
+}
+
+.seccion-menu .sub-menu li {
+    list-style-type: none;
+    padding: 3px;
+    color: white;
+}
+
+.seccion-menu div {
+    width: 22%;
+}
+
+/* ---------------------------------------------------- */
+
+.body-fotos * {
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.contenedor figure {
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.contenedor figure .img-fotos-messi {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.contenedor figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 7, 11, 0.724);
+    transition: all 300ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor figure:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor figure:hover>.capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.contenedor figure .capa h3 {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 100px;
+    transition: all 300ms ease-out;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.body-fotos h2 {
+    font-weight: bold;
+    font-size: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* --------------------- encuesta.html -----------------------------*/
+
+.encuesta {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+form {
+    margin: 80px auto;
+    width: 700px;
+    background-color: #04041c;
+    padding: 10px;
+    border-radius: 7px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+form h2 {
+    font-size: 20px;
+}
+
+input {
+    outline: none;
+    border: 0;
+}
+
+.btn {
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #0a7ebd;
+    color: #04041c;
+}
+
+select {
+    margin-right: 150px;
+    display: inline-block;
+    width: 20%;
+    cursor: pointer;
+    padding: 7px 10px;
+    height: 42px;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f0f0f0;
+    font-size: 1.5em;
+    color: rgb(7, 0, 0);
+    font-family: 'Quicksand', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
