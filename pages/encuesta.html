@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css personalizado-->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-encuesta.css">
     <title>Encuesta</title>
 </head>
 <body class="encuesta">
@@ -49,23 +50,34 @@
 
     </nav>
 
+    <main class="encuesta">
+        <section>
+            <div class="grid-container-encuesta">
 
-    <h1>Encuesta</h1>
-    <div class="encuesta">
-        <form action="">    
-            <h2>Selecciona de la lista el mejor futbolista de la historia.</h2>
-            <select>
-                <option>Messi</option>
-                <option>Maradona</option>
-                <option>Di Stefano</option>
-                <option>Pelé</option>
-                <option>Ronaldhino</option>
-                <option>Cruyff</option>
-                <option>Otro</option>
-                <input type="submit" class="btn" value="votar"/>
-                <input type="submit" class="btn" value="Ver Resultados"/>
-            </select>
-        </form>
-    </div>
+                <div class="grid-item-texto">
+                    <h2>>Encuesta</h2>
+                </div>
+
+                <div class="grid-item-control">
+                    <form action="">    
+                        <h2>Selecciona de la lista el mejor futbolista de la historia.</h2>
+                        <select class="grid-item-control">
+                            <option>Messi</option>
+                            <option>Maradona</option>
+                            <option>Di Stefano</option>
+                            <option>Pelé</option>
+                            <option>Ronaldhino</option>
+                            <option>Cruyff</option>
+                            <option>Otro</option>
+                            <input type="submit" class="btn" value="votar"/>
+                            <input type="submit" class="btn" value="Ver Resultados"/>
+                        </select>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>

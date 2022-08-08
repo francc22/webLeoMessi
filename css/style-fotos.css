@@ -1,0 +1,92 @@
+
+.imagen
+{
+    width: 100%;
+    display: flex;    
+    justify-content: center;
+    align-items: center;        
+    transition: transform 0.5s ease-in-out;   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.imagen img
+{
+    width: 100%;
+    border-radius: 5px;
+    height: 300px;
+}
+
+.imagen:hover
+{
+    filter: opacity(0.9);
+    transform: scale(1.05);
+}
+
+
+.container-barcelona
+{
+
+}
+
+.galeria
+{
+    width: 100%;    
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+@media (min-width:200px)
+{
+    .galeria
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width:600px)
+{
+    .galeria
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:750px)
+{
+    .galeria
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width:1024px)
+{
+    .galeria
+    {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+/* --------------------------- ESTILOS - DESKTOP --------------------------- */
+/* ------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+@media (min-width: 750px) {
+
+
+
+}
