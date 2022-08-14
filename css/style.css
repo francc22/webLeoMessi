@@ -1,11 +1,9 @@
-
-
 /* --------------------------- RESETEO EL NAVEGADOR -----------------------*/
 html,
 body {
     margin: 0;
     padding: 0;
-    font-family: arial;    
+    font-family: arial;
 }
 
 ul {
@@ -32,9 +30,8 @@ p {
 
 /* ---- logo y boton menu de navegación ---- */
 
-.navegacion {
-    /* background: #04041c; */    
-    background-image: linear-gradient(to bottom, #04041c 0%, transparent 100%);
+.navegacion {        
+    background-color: #181e3e;        
 }
 
 .navegacion-header {
@@ -52,16 +49,15 @@ header img {
 
 .navegacion-menu {
     display: flex;
-    position: absolute;
-    /* background: #04041c; */
-    background-image: linear-gradient(to bottom, #04041c 0%, transparent 100%);
+    position: absolute;    
+    background-image: linear-gradient(to top, #181e3e 0%, transparent 100%);
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;    
+    flex-direction: column;
     height: 0;
-    overflow: hidden;
-    transition: all 0.7s ease;    
+    overflow: hidden;    
+    transition: all 0.7s ease; 
 }
 
 .navegacion-link {
@@ -87,9 +83,9 @@ header img {
 
 .navegacion-menu a:hover {
     font-size: 20px;
-    color: red;    
+    color: red;
     font-weight: bold;
-    transform: scale(1.1);
+    transform: scale(1.3);
 }
 
 
@@ -99,167 +95,142 @@ header img {
 
 /* ---- Imagen y titulo de Index.html ---- */
 
-.grid-container-portada
-{
+.grid-container-portada {
     width: 100%;
-	margin: auto;	    
-	display: grid;	
+    margin: auto;
+    display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: auto;	    
+    grid-auto-rows: auto;
 }
 
-.grid-container-portada > div
-{
+.grid-container-portada>div {
     display: flex;
-	align-items: center; 
-	justify-content: center; 
-	background-color: #04041c
-} 
-
-.grid-item-portada-imagen img
-{
-	width: 100%;    
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-    transition: all 0.2s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    background-color: #04041c
 }
 
-.grid-item-portada-imagen img:hover
-{
-    opacity: 0.3;
+.grid-item-portada-imagen img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
 }
 
-.grid-item-portada-titulo h1
-{
+.grid-item-portada-titulo h1 {
     color: white;
-	font-size: 30px;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;	
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 /* ---- Seccion: Noticias / Novedades - Fundacion Leo Messi en Index.html ---- */
 
-.grid-container
-{    
-	width: 100%;
+.grid-container {
+    width: 100%;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;       
-	grid-template-areas: 'imagen imagen imagen'
-						 'texto texto texto'
-						 'links links links';	
-    grid-template-rows: auto;	
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'imagen imagen imagen'
+        'texto texto texto'
+        'links links links';
+    grid-template-rows: auto;
 }
 
-.grid-item-col1
-{
-	grid-area: imagen;
+.grid-item-col1 {
+    grid-area: imagen;
 }
 
-.grid-item-col2
-{
-	grid-area: texto
+.grid-item-col2 {
+    grid-area: texto
 }
 
-.grid-item-col3
-{
+.grid-item-col3 {
     grid-area: links;
 }
 
-.grid-item-col1
-{
-    display: flex;    
-	justify-content: center;
-	align-items: center;
-	background-repeat: no-repeat;
-    margin: 15px;    
+.grid-item-col1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin: 15px;
 }
 
-.grid-item-col2
-{
-    display: flex;    
-	justify-content: center;
-	align-items: center;
-	background-repeat: no-repeat;
-    margin: 15px;    
+.grid-item-col2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin: 15px;
 }
 
-.grid-item img
-{
+.grid-item img {
     border-radius: 10px;
-    width: 100%;    
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-repeat: no-repeat;
-	background-size: cover;	
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.grid-item-col3 a img
-{  
-    display: flex;   
-    flex-direction: row;   
+.grid-item-col3 a img {
+    display: flex;
+    flex-direction: row;
     width: 50px;
     height: 50px;
 }
 
-h2
-{
+h2 {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;    
+    font-size: 25px;
     margin-top: 20px;
-    margin-bottom: 50px;    
-    text-align: center;    
-    text-decoration: underline;    
+    margin-bottom: 50px;
+    text-align: center;
+    text-decoration: underline;
 }
 
-.grid-item
-{
-    display: flex; 
-    flex-direction: column;   
+.grid-item {
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;    
+    align-items: center;
 }
 
-.grid-item h3
-{    
-    font-size: 18px;    
-    margin-top: 10px;  
-    text-align: center;  
+.grid-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
 }
 
-.grid-item p
-{
+.grid-item p {
     text-align: justify;
     padding: 10px;
-} 
+}
 
 
-.grid-item-col3
-{
+.grid-item-col3 {
     display: flex;
     flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	background-repeat: no-repeat;
+    justify-content: space-around;
+    align-items: center;
+    background-repeat: no-repeat;
     margin: 10px;
 }
 
-.grid-item-col3 a img
-{    
+.grid-item-col3 a img {
     width: 25px;
     height: 25px;
 }
 
-.boton-acciones-fundacion
-{    
+.boton-acciones-fundacion {
     background: #0a7ebd;
     font-family: sans-serif;
     color: white;
@@ -269,28 +240,25 @@ h2
 }
 
 
- 
+
 /* ---- Seccion: Fundacion Leo Messi en Index.html ---- */
 
 
 
-.flex-container-fundacion-messi
-{
+.flex-container-fundacion-messi {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.flex-container-fundacion-messi img
-{
-    width: 100%;    
+.flex-container-fundacion-messi img {
+    width: 100%;
     margin: auto;
     padding: 10px;
 }
 
-.flex-container-fundacion-messi h2
-{
+.flex-container-fundacion-messi h2 {
     margin: 0;
     margin-top: 40px;
 }
@@ -298,117 +266,104 @@ h2
 
 /*---------------------- biografia.html --------------------------*/
 
-.grid-container-biografia
-{    
-	width: 100%;
+.grid-container-biografia {
+    width: 100%;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr ;       
-	grid-template-areas: 'imagen imagen'
-						 'texto texto';	
-    grid-template-rows: auto;	
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'imagen imagen'
+        'texto texto';
+    grid-template-rows: auto;
 }
 
-.grid-item
-{
-    display: flex; 
-    flex-direction: column;   
+.grid-item {
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;    
+    align-items: center;
 }
 
-.grid-item-col1
-{
-	grid-area: imagen;
+.grid-item-col1 {
+    grid-area: imagen;
 }
 
-.grid-item-col1
-{
-    display: flex;    
-	justify-content: center;
-	align-items: center;
-	background-repeat: no-repeat;
-    margin: 15px;    
+.grid-item-col1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin: 15px;
 }
 
-.grid-item-col2
-{
-	grid-area: texto
+.grid-item-col2 {
+    grid-area: texto
 }
 
-.grid-item-col2
-{
-    display: flex;    
-	justify-content: center;
-	align-items: center;
-	background-repeat: no-repeat;
-    margin: 15px;    
+.grid-item-col2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin: 15px;
 }
 
 /*---------------------- estadisticas.html --------------------------*/
 
-.estadisticas-sub-menu
-{
+.estadisticas-sub-menu {
     display: flex;
     flex-direction: column;
-    padding: 10px;    
+    padding: 10px;
 }
 
-.estadisticas-sub-menu a
-{    
-    padding: 5px;    
+.estadisticas-sub-menu a {
+    padding: 8px;
     background-color: dodgerblue;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 1px solid white;
     color: white;
+    font-weight: bold;
 }
 
-.grid-container-estadisticas
-{    
-	width: 100%;
+.grid-container-estadisticas {
+    width: 100%;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr ;       
-	grid-template-areas:'imagen imagen' 
-                        'texto texto'
-                         ;	
-    grid-template-rows: auto;	
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'imagen imagen'
+        'texto texto'
+    ;
+    grid-template-rows: auto;
 }
 
-.grid-item
-{
-    display: flex; 
-    flex-direction: column;   
+.grid-item {
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;    
+    align-items: center;
 }
 
-.grid-item-col1
-{
-	grid-area: imagen;
+.grid-item-col1 {
+    grid-area: imagen;
 }
 
-.grid-item-col1
-{
-    display: flex;    
-	justify-content: center;
-	align-items: center;
-	background-repeat: no-repeat;
-    margin: 15px;    
+.grid-item-col1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin: 15px;
 }
 
-.grid-item-col2
-{
-	grid-area: texto
+.grid-item-col2 {
+    grid-area: texto
 }
 
-.grid-item-col2
-{
-    display: flex;    
-	justify-content: center;
-	align-items: center;
-	background-repeat: no-repeat;
-    margin: 15px;    
+.grid-item-col2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin: 15px;
 }
 
 
@@ -416,70 +371,58 @@ h2
 
 
 
-.imagen
-{
+.imagen {
     width: 100%;
-    display: flex;    
+    display: flex;
     justify-content: center;
-    align-items: center;        
-    transition: transform 0.5s ease-in-out;   
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: auto;
 }
 
-.imagen img
-{
+.imagen img {
     width: 100%;
     border-radius: 5px;
     height: 300px;
 }
 
-.imagen:hover
-{
+.imagen:hover {
     filter: opacity(0.9);
     transform: scale(1.05);
 }
 
-.galeria
-{
-    width: 100%;    
+.galeria {
+    width: 100%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
     row-gap: 10px;
 }
 
-@media (min-width:200px)
-{
-    .galeria
-    {
+@media (min-width:200px) {
+    .galeria {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media (min-width:600px)
-{
-    .galeria
-    {
+@media (min-width:600px) {
+    .galeria {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width:750px)
-{
-    .galeria
-    {
+@media (min-width:750px) {
+    .galeria {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (min-width:1024px)
-{
-    .galeria
-    {
+@media (min-width:1024px) {
+    .galeria {
         grid-template-columns: repeat(4, 1fr);
     }
 }
@@ -503,13 +446,13 @@ h2
 
     .navegacion-menu-mobile {
         display: none;
-    }   
+    }
 
     .navegacion-menu-mobile .cerrar {
         display: none;
-    }   
+    }
 
-/* ---- menu de navegación ---- */
+    /* ---- menu de navegación ---- */
 
     .navegacion-menu {
         height: auto;
@@ -519,50 +462,48 @@ h2
 
     /* ---- contenido (main) de Index.html ---- */
 
-    .grid-container
-    {       
+    .grid-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;       
-        grid-template-areas: 'imagen texto links';						             
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 'imagen texto links';
         grid-template-rows: auto;
     }
 
 
     /*---------------------- biografia.html --------------------------*/
 
-    .grid-container-biografia
-    {       
+    .grid-container-biografia {
         display: grid;
-        grid-template-columns: 1fr 1fr ;       
-        grid-template-areas: 'imagen texto';						             
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'imagen texto';
         grid-template-rows: auto;
     }
 
     /*---------------------- estadisticas.html --------------------------*/
 
-    
-.estadisticas-sub-menu
-{
-    display: flex;
-    flex-direction: row;    
-    margin: auto;
-    vertical-align: middle;
-    justify-content: center;
-    width: 100%;    
-    margin-top: 30px;    
-}
 
-.estadisticas-sub-menu a
-{    
-    padding: 10px;    
-    background-color: dodgerblue;
-    border-radius: 10px;
-    border: 1px solid white;
-    color: white;
-    font-weight: bold;
-    margin: 10px;
-}
+    .estadisticas-sub-menu {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        vertical-align: middle;
+        justify-content: center;
+        width: 100%;
+        margin-top: 30px;
+    }
 
-/*---------------------- fotos.html --------------------------*/
-   
+    .estadisticas-sub-menu a {
+        margin: 10px;
+    }
+
+    /*---------------------- encuesta.html --------------------------*/
+
+    #encuesta .container .row .margen {
+        margin-top: 0 !important;             
+    }
+
+    #encuesta .container .row select
+    {
+        width: 75%;
+    }
 }
