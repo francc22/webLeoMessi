@@ -20,9 +20,14 @@ p {
     margin: 0
 }
 
-*,
+/* *,
 ::before,
 ::after {
+    box-sizing: border-box;
+} */
+
+*
+{
     box-sizing: border-box;
 }
 
@@ -465,6 +470,69 @@ h2 {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+
+/*---------------------- contacto.html --------------------------*/
+
+
+#contacto .container-formulario
+{
+    margin: auto;
+    padding: 15px 15px;
+    background-color: pink;
+    width: 100%;
+    max-width: 400px;
+    background: url(../img/fondo-form.jpg) no-repeat 0px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+}
+
+#contacto form
+{
+    width: 100%;    
+    margin: auto;    
+}
+
+#contacto form label
+{
+    display: block;
+    padding: 10px 0;
+}
+
+#contacto form input, textarea
+{
+    display: block;
+    width: 100%;
+    margin-top: 10px;    
+}
+
+#contacto form textarea
+{
+    height: 200px;
+}
+
+#contacto form .boton
+{
+    width: 100%;
+    outline: none;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 13px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #69A7D4;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+
+
 
 
 /* ------------------------------------------------------------------------- */

@@ -10,7 +10,7 @@
     <title>Contacto</title>
 </head>
 
-<body>
+<body id="contacto">
     <nav class="navegacion" id="navegacion-header">
 
         <header class="navegacion-header">
@@ -53,28 +53,38 @@
 
     <main>
         <h1>Conctáctenos</h1>
-        <div>
-            <div>
-                <h2>Síguenos en nuestras redes sociales</h2>
-                <img src="#" alt="youtube" />
-                <img src="#" alt="instagram" />
-                <img src="#" alt="facebook" />
-            </div>
+        <div class="container-formulario">
+            
+            <form>
 
-            <div>
-                <h2>Formulario de contacto</h2>
-                <form>
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
-                    <input type="email" placeholder="E-Mail">
-                    <input type="tel" placeholder="Teléfono">
-                    <textarea placeholder="Tu mensaje aquí"></textarea>
-                    <input type="submit" />
-                </form>
-            </div>
+                <label>
+                    Nombre:
+                    <input type="text" />
+                </label>
+
+                <label>
+                    Apellido:
+                    <input type="text" />
+                </label>
+
+                <label>
+                    Telefono:
+                    <input type="number" />
+                </label>
+
+                <label>
+                    E-Mail:
+                    <input type="email" />
+                </label>
+
+                <textarea>Tu mensaje aquí</textarea>
+
+                <input class="boton" type="button" value="Enviar" />
+
+            </form>
         </div>
     </main>
-    
+
 </body>
 
 </html>
