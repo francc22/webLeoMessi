@@ -60,39 +60,42 @@
     <div class="container mt-3 mb-5 text-center col-4">
         <h1 class="text-decoration-underline">Encuesta</h1>
     </div>
+    <main>
+        <form action="">
+            <div class="container border border-secondary border-5 col-9 rounded-3 bg-light">
 
-    <form action="">
-        <div class="container border border-secondary border-5 col-9 rounded-3 bg-light">
+                <h2>Selecciona al mejor futbolista de la historia.</h2>
 
-            <h2>Selecciona al mejor futbolista de la historia.</h2>
+                <div class="row">
 
-            <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
 
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione el jugador...</option>
+                            <option value="1">Messi</option>
+                            <option value="2">Maradona</option>
+                            <option value="3">Di Stefano</option>
+                            <option value="4">Pelé</option>
+                            <option value="5">Ronaldhino</option>
+                            <option value="6">Cruyff</option>
+                            <option value="7">Otro</option>
+                        </select>
 
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Seleccione el jugador...</option>
-                        <option value="1">Messi</option>
-                        <option value="2">Maradona</option>
-                        <option value="3">Di Stefano</option>
-                        <option value="4">Pelé</option>
-                        <option value="5">Ronaldhino</option>
-                        <option value="6">Cruyff</option>
-                        <option value="7">Otro</option>
-                    </select>
+                    </div>
 
-                </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center mt-5 mb-5 margen">
+                        <button type="button" class="btn btn-success px-4 mx-2">Votar</button>
+                        <button type="button" class="btn btn-primary px-4 mx-2">Ver resultados</button>
+                    </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center mt-5 mb-5 margen">
-                    <button type="button" class="btn btn-success px-4 mx-2">Votar</button>
-                    <button type="button" class="btn btn-primary px-4 mx-2">Ver resultados</button>
                 </div>
 
             </div>
 
-        </div>
+        </form>
 
-    </form>
+    </main> 
+
 </body>
 
 </html>

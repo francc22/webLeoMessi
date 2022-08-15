@@ -27,8 +27,10 @@ p {
 }
 
 
+/* --------------------------- MENU DE NAVEGACION ----------------------------*/
 
-/* ---- logo y boton menu de navegación ---- */
+
+                    /* logo y boton menu de navegación */
 
 .navegacion {        
     background-color: #181e3e;        
@@ -45,7 +47,7 @@ header img {
     height: 60px;
 }
 
-/* ---- menu de navegación ---- */
+                            /* menu de navegación */
 
 .navegacion-menu {
     display: flex;
@@ -89,11 +91,48 @@ header img {
 }
 
 
+/* --------------------------- FOOTER  ----------------------------*/
+
+.grid-footer-container
+{
+    background-color: #181e3e;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;        
+}
+
+.grid-footer-item
+{    
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 100%;    
+    color: white;    
+}
+
+.grid-footer-item img
+{   
+    width: 30%;
+}
+
+.col-2 a
+{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: darkorange;
+    color: black;
+    font-weight: bold;    
+}
+
+
+
 /* -------------------------- INDEX.HTML ------------------------------ */
 
 
 
-/* ---- Imagen y titulo de Index.html ---- */
+                    /* Imagen y titulo de Index.html */
 
 .grid-container-portada {
     width: 100%;
