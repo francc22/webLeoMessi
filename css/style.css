@@ -20,12 +20,6 @@ p {
     margin: 0
 }
 
-/* *,
-::before,
-::after {
-    box-sizing: border-box;
-} */
-
 *
 {
     box-sizing: border-box;
@@ -176,7 +170,7 @@ header img {
 
 /* ---- Seccion: Noticias / Novedades - Fundacion Leo Messi en Index.html ---- */
 
-.grid-container {
+#index .grid-container {
     width: 100%;
     margin: auto;
     display: grid;
@@ -187,52 +181,55 @@ header img {
     grid-template-rows: auto;
 }
 
-.grid-item-col1 {
+#index .grid-item-1 {
     grid-area: imagen;
 }
 
-.grid-item-col2 {
+#index .grid-item-2 {
     grid-area: texto
 }
 
-.grid-item-col3 {
+#index .grid-item-3 {
     grid-area: links;
 }
 
-.grid-item-col1 {
+#index .grid-container .grid-item {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    margin: 15px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+    margin-top: 10px;
 }
 
-.grid-item-col2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    margin: 15px;
-}
-
-.grid-item img {
+#index .grid-container .grid-item > img {
     border-radius: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;    
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0 5px;
 }
 
-.grid-item-col3 a img {
+#index .grid-container .grid-item .links
+{
     display: flex;
     flex-direction: row;
-    width: 50px;
-    height: 50px;
+    justify-content: space-around;  
+    align-items: center;  
+    width: 100%;
+    max-width: 350px;    
 }
 
-h2 {
+#index .grid-item .links > div
+{
+    text-align: center;
+}
+
+#index .links img
+{
+    width: 50%;  
+}
+
+#index h2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
     margin-top: 20px;
@@ -241,38 +238,20 @@ h2 {
     text-decoration: underline;
 }
 
-.grid-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.grid-item h3 {
+#index .grid-item h3 {
     font-size: 18px;
     margin-top: 10px;
     text-align: center;
 }
 
-.grid-item p {
+#index .grid-item p {
     text-align: justify;
     padding: 10px;
 }
 
 
-.grid-item-col3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-repeat: no-repeat;
-    margin: 10px;
-}
+/* ---- Seccion: Fundacion Leo Messi en Index.html ---- */
 
-.grid-item-col3 a img {
-    width: 25px;
-    height: 25px;
-}
 
 .boton-acciones-fundacion {
     background: #0a7ebd;
@@ -282,12 +261,6 @@ h2 {
     border-radius: 15px;
     padding: 15px;
 }
-
-
-
-/* ---- Seccion: Fundacion Leo Messi en Index.html ---- */
-
-
 
 .flex-container-fundacion-messi {
     display: flex;
@@ -305,50 +278,48 @@ h2 {
 .flex-container-fundacion-messi h2 {
     margin: 0;
     margin-top: 40px;
-}
+} 
 
 
 /*---------------------- biografia.html --------------------------*/
 
-.grid-container-biografia {
+#biografia .grid-container-biografia {
     width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'imagen imagen'
-        'texto texto';
+                         'texto texto';
     grid-template-rows: auto;
 }
 
-.grid-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.grid-item-col1 {
+#biografia .grid-item-1 {
     grid-area: imagen;
 }
 
-.grid-item-col1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    margin: 15px;
+#biografia .grid-item-2 {
+    grid-area: texto;
 }
 
-.grid-item-col2 {
-    grid-area: texto
+#biografia .grid-container-biografia .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;        
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 0 5px;
 }
 
-.grid-item-col2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    margin: 15px;
+#biografia .grid-item > img
+{
+    width: 100%;
+}
+
+#biografia h2
+{
+    margin-left: 5%;
 }
 
 /*---------------------- estadisticas.html --------------------------*/
@@ -368,52 +339,53 @@ h2 {
     font-weight: bold;
 }
 
-.grid-container-estadisticas {
+#estadisticas .grid-container-estadisticas {
     width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'imagen imagen'
-        'texto texto'
-    ;
+                         'texto texto';
     grid-template-rows: auto;
 }
 
-.grid-item {
+#estadisticas .grid-item-col1 {
+    grid-area: imagen;   
+}
+
+#estadisticas .grid-item-col2 {
+    grid-area: texto;    
+}
+
+#estadisticas .grid-container-estadisticas .grid-item {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;    
+    width: 100%;
 }
 
-.grid-item-col1 {
-    grid-area: imagen;
+#estadisticas .grid-item > img
+{
+    width: 100%;
+    padding: 0 10px;
 }
 
-.grid-item-col1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    margin: 15px;
+
+/*---------------------- palmares.html --------------------------*/
+
+#palmares .grid-container-palmares
+{
+    width: 100%;
 }
 
-.grid-item-col2 {
-    grid-area: texto
-}
-
-.grid-item-col2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    margin: 15px;
+#palmares .grid-container-palmares > img
+{
+    width: 100%;
 }
 
 
 /*---------------------- fotos.html --------------------------*/
-
-
 
 .imagen {
     width: 100%;
@@ -567,9 +539,9 @@ h2 {
         position: static;
     }
 
-    /* ---- contenido (main) de Index.html ---- */
+    /*---------------------- index.html --------------------------*/
 
-    .grid-container {
+    #index .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 'imagen texto links';
@@ -579,7 +551,7 @@ h2 {
 
     /*---------------------- biografia.html --------------------------*/
 
-    .grid-container-biografia {
+    #biografia .grid-container-biografia {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 'imagen texto';
