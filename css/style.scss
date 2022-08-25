@@ -10,6 +10,11 @@ $colorOrange: darkorange;
 $colorRed: red;
 $colorBlue: #181e3e;
 
+/* ------- mixin --------*/
+
+@mixin anchoTotal {
+    width: 100%;
+}
 
 
 /* ************************************************************************** */
@@ -75,16 +80,23 @@ header {
 }
 
 .navegacion-menu {
+    @include anchoTotal;
     display: flex;
     position: absolute;
-    background-image: linear-gradient(to top, $colorBlue 0%, transparent 100%);
-    width: 100%;
+    background-image: linear-gradient(to top, $colorBlue 0%, transparent 100%);    
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     height: 0;
     overflow: hidden;
     transition: all 0.7s ease;
+
+    a:hover {
+        font-size: 20px;
+        color: $colorRed;
+        font-weight: bold;
+        transform: scale(1.3);
+    }
 }
 
 .navegacion-link {
@@ -114,13 +126,6 @@ header {
     display: none;
 }
 
-.navegacion-menu a:hover {
-    font-size: 20px;
-    color: $colorRed;
-    font-weight: bold;
-    transform: scale(1.3);
-}
-
 /* ************************************************************************** */
 /* *********************************** FOOTER ******************************* */
 /* ************************************************************************** */
@@ -136,9 +141,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    align-items: center;
-    width: 100%;
+    align-items: center;    
     color: $colorWhite;
+    @include anchoTotal;
 
     img {
         width: 30%;
@@ -162,7 +167,7 @@ header {
 /* ************************************************************************** */
 
 .grid-container-portada {
-    width: 100%;
+    @include anchoTotal;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -178,7 +183,7 @@ header {
 
 .grid-item-portada-imagen {
     img {
-        width: 100%;
+        @include anchoTotal;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -192,7 +197,7 @@ header {
     h1 {
         color: white;
         font-size: 30px;
-        width: 100%;
+        @include anchoTotal;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -205,7 +210,7 @@ header {
 
 #index {
     .grid-container {
-        width: 100%;
+        @include anchoTotal;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -251,7 +256,7 @@ header {
         .grid-item {
             >img {
                 border-radius: 10px;
-                width: 100%;
+                @include anchoTotal;
                 background-repeat: no-repeat;
                 background-size: cover;
                 padding: 0 5px;
@@ -268,7 +273,7 @@ header {
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
-                width: 100%;
+                @include anchoTotal;
                 max-width: 350px;
             }
         }
@@ -343,7 +348,7 @@ header {
 
 .flex-container-fundacion-messi {
     img {
-        width: 100%;
+        @include anchoTotal;
         margin: auto;
         padding: 10px;
     }
@@ -362,7 +367,7 @@ header {
 
 #biografia {
     .grid-container-biografia {
-        width: 100%;
+        @include anchoTotal;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -402,7 +407,7 @@ header {
 #biografia {
     .grid-item {
         >img {
-            width: 100%;
+            @include anchoTotal;
         }
     }
 }
@@ -434,7 +439,7 @@ header {
 
 #estadisticas {
     .grid-container-estadisticas {
-        width: 100%;
+        @include anchoTotal;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -463,7 +468,7 @@ header {
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            width: 100%;
+            @include anchoTotal;
         }
     }
 }
@@ -471,7 +476,7 @@ header {
 #estadisticas {
     .grid-item {
         >img {
-            width: 100%;
+            @include anchoTotal;
             padding: 0 10px;
         }
     }
@@ -483,14 +488,14 @@ header {
 
 #palmares {
     .grid-container-palmares {
-        width: 100%;
+        @include anchoTotal;
     }
 }
 
 #palmares {
     .grid-container-palmares {
         >img {
-            width: 100%;
+            @include anchoTotal;
         }
     }
 }
@@ -500,7 +505,7 @@ header {
 /* ************************************************************************** */
 
 .imagen {
-    width: 100%;
+    @include anchoTotal;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -511,19 +516,19 @@ header {
     margin: auto;
 
     img {
-        width: 100%;
+        @include anchoTotal;
         border-radius: 5px;
         height: 300px;
     }
-}
 
-.imagen:hover {
-    filter: opacity(0.9);
-    transform: scale(1.05);
+    &:hover {
+        filter: opacity(0.9);
+        transform: scale(1.05);
+    }
 }
 
 .galeria {
-    width: 100%;
+    @include anchoTotal;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -564,7 +569,7 @@ header {
         margin: auto;
         padding: 20px 10px;
         background-color: pink;
-        width: 100%;
+        @include anchoTotal;
         max-width: 400px;
         background: url(../img/fondo-form.jpg) no-repeat 0px;
         background-size: cover;
@@ -577,7 +582,7 @@ header {
 
 #contacto {
     form {
-        width: 100%;
+        @include anchoTotal;
         margin: auto;
 
         label {
@@ -587,19 +592,19 @@ header {
 
         input {
             display: block;
-            width: 100%;
+            @include anchoTotal;
             margin-top: 5px;
         }
 
         textarea {
             display: block;
-            width: 100%;
+            @include anchoTotal;
             margin-top: 5px;
             height: 100px;
         }
 
         .boton {
-            width: 100%;
+            @include anchoTotal;
             outline: none;
             margin: 0 auto;
             margin-top: 20px;
@@ -688,7 +693,7 @@ header {
         margin: auto;
         vertical-align: middle;
         justify-content: center;
-        width: 100%;
+        @include anchoTotal;
         margin-top: 30px;
 
         a {
